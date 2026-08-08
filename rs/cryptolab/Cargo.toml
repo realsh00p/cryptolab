@@ -1,0 +1,11 @@
+[package]
+name = "cryptolab"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+rand = "0.8.5"
+rsa = "0.9.10"
+rug = "1.30.0"
+sha2 = "0.10.9"

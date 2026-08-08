@@ -1,0 +1,23 @@
+---
+Checks: >-
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  performance-*,
+  portability-*,
+  -portability-avoid-pragma-once,
+  modernize-use-nullptr,
+  modernize-use-override,
+  modernize-use-using,
+  readability-const-return-type,
+  readability-container-size-empty,
+  readability-duplicate-include,
+  readability-make-member-function-const,
+  readability-redundant-*
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*/cryptolab/(include|src)/.*'
+SystemHeaders: false
+FormatStyle: file
+CheckOptions:
+  performance-move-const-arg.CheckTriviallyCopyableMove: true
+...

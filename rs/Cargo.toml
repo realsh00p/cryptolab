@@ -1,0 +1,6 @@
+[workspace]
+members = ["cryptolab"]
+resolver = "3"
+
+[profile.dev.package.num-bigint-dig]
+opt-level = 3

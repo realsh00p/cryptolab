@@ -1,0 +1,41 @@
+{
+  "folders": [
+    {
+      "name": "cryptolab",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/py/.venv/bin/python",
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "explicit",
+        "source.organizeImports.ruff": "explicit"
+      }
+    },
+    "rust-analyzer.linkedProjects": [
+      "${workspaceFolder}/rs/Cargo.toml"
+    ],
+    "clangd.path": "clangd",
+    "clangd.arguments": [
+      "--background-index",
+      "--clang-tidy",
+      "--compile-commands-dir=${workspaceFolder}/cpp/build"
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/cpp",
+    "cmake.buildDirectory": "${workspaceFolder}/cpp/build",
+    "cmake.generator": "Ninja"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "charliermarsh.ruff",
+      "rust-lang.rust-analyzer",
+      "llvm-vs-code-extensions.vscode-clangd",
+      "ms-vscode.cmake-tools"
+    ]
+  }
+}
